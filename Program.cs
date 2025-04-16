@@ -4,7 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
+builder.Services.AddHttpClient<RaiderIOService>();
+builder.Services.Configure<RaideRIoSettings>(
+    builder.Configuration.GetSection("RaiderIo")
+);
 
 builder.Services.AddControllers().AddJsonOptions(opts =>
 {

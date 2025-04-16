@@ -1,0 +1,13 @@
+:root {
+
+}
+
+[data-theme="horde"] {
+    --bg-image:url("../assets/horde-background.jpg");
+    --border-color: #FFD700;
+}
+
+[data-theme="alliance"] {
+    --bg-image: url("../assets/alliance-background.jpg");
+    --border-color: #ffc300;
+}
